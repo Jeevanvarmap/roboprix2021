@@ -1,0 +1,1478 @@
+<html lang="en" class="full-height js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths -webkit-">
+  
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="img/Logo.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="robot,robotics,roboprix,roboprix2021,roboprix2k21,vit,events in chennai,event,chennai events,quadcopter,drag race,line follower,obstacle race,workshops,mechatronics">
+
+<title>RoboPrix</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+<link rel="stylesheet" href="CSS/fonts.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:700,700italic">
+<!-- CSS -end -->
+
+<!-- Custom CSS -->
+<style>
+body{
+  font-family: sans-serif;
+  background: rgb(40,40,40);
+}
+</style>
+<style media="" data-href="scss/style.scss">@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* $yellow:#EE445F;
+$black:#000000;
+$grey:#cccccc; */
+
+body{
+  background: rgb(40,40,40) !important;
+}
+.jumbotron{
+  background-color: rgb(40,40,40);
+  color:#fff;
+  padding-top:30px;
+  margin:0;
+}
+.banner{
+  display:none;
+  visibility: hidden;
+  text-align: center;
+  position: relative;
+  margin-top: 10%;
+  padding-left:10%;
+  font:40px Lato !important;
+  text-transform:uppercase;
+  letter-spacing:10px;
+  background:linear-gradient(90deg,#fff,#000,#fff);
+  background-repeat: no-repeat;background-size: 80%;
+  animation:animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0.1); 
+}
+@keyframes animate{
+  0%{
+    background-position:-500%;
+  }
+  100%{
+    background-position:500%;
+  }
+}
+#aboutheader{
+  text-align: center;padding:0 10%;margin:0;
+}
+@media (max-width: 767px){
+  .banner{
+      font:25px Lato !important;
+      margin-top: 100px;
+      display:inline-block;
+      visibility: visible;
+  }
+  h3{
+      font:15px Lato !important;
+  }
+   #aboutheader{
+     margin:0;
+   }
+}
+.navbar-inverse{
+  background:rgb(40,40,40) !important;
+  border-bottom:4px solid #EE445F !important;
+}
+.navbar-brand{
+  font:15px Lato !important;
+  text-transform:uppercase;
+  color:#FFF !important;
+  letter-spacing:5px;
+  margin-top:10px;
+}
+.navbar-toggle{
+  margin-top:18px;
+}
+.nav{
+  margin-top:5px;
+  float: right;
+}
+  a{
+    font:11px Lato !important;
+    letter-spacing:2px;
+    padding:16px !important;
+    color:#a3bfc6 !important;
+    text-transform:uppercase;
+    position:relative;
+    z-index:1000;
+  }
+  a:hover{
+    color:#FFF !important;
+  }
+  li{
+	position:relative;
+  }
+
+.navbar-inverse .navbar-toggle{
+  border:none;
+}
+.navbar-collapse{
+  box-shadow:none !important;
+  border:none !important;
+}
+.navbar-inverse .navbar-toggle:hover{
+  background:transparent !important;
+}
+.navbar-inverse .navbar-toggle:focus{
+  background:transparent !important;
+}
+.navbar-inverse .navbar-toggle:active{
+  background:transparent !important;
+}
+.icon-bar{
+  background:#a3bfc6 !important;
+}
+.hover{
+  display:block;
+  position:absolute;
+  width:0%;
+  height:100%;
+  top:0px;
+  left:0px;
+  background:#EE445F !important;
+  z-index:0;
+  opacity:0;
+}
+@media (max-width: 767px) {
+  .jumbotron{
+    padding-bottom:0;
+  }
+.nav{
+  float:left;
+  padding-bottom:20px;
+}
+  a{
+    padding:12px !important;
+  }
+
+.display-4{
+  padding-top:25px;
+}
+}
+@media (max-width: 480px) {
+  .nav{
+    padding-bottom:20px;
+  }
+}
+@keyframes animate{
+  0%{
+    background-position:-500%;
+
+  }
+  100%{
+    background-position:500%;
+  }
+}
+hr{
+  width:100%;
+  animation-duration: 2s;
+  animation-name: fadeInRight;
+}
+@-webkit-keyframes fadeInRight{
+  0%{
+      opacity:0;
+      -webkit-transform:translateX(200px);
+      transform:translateX(200px)
+  }
+  100%{
+      opacity:1;
+      -webkit-transform:translateX(0);
+      transform:translateX(0)
+  }
+}
+@keyframes fadeInRight{
+  0%{
+      opacity:0;
+      -webkit-transform:translateX(200px);
+      -ms-transform:translateX(200px);
+      transform:translateX(200px)
+  }
+  100%{
+      opacity:1;
+      -webkit-transform:translateX(0);
+      -ms-transform:translateX(0);
+      transform:translateX(0)
+  }
+}
+h3{
+    color:#fff;
+    font:20px Lato !important; 
+    letter-spacing: 7px; 
+}
+#team {
+    background: #eee;
+}
+.btn-primary:hover,.btn-primary:focus{
+    background-color: #fed136;
+    border-color: #fed136;
+    box-shadow: none;
+    outline: none;
+    color:#000;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #EE445F;
+    border-color: #EE445F;
+    outline:none;
+    text-decoration: none;
+}
+section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#team .card {
+    border: none;
+    background: #ffffff;
+    padding:40px;
+    border-radius: 20px;
+    transition: 0.2s;
+   /* box-shadow:0px 10px 10px 0px rgb(112, 112, 112);*/   
+}
+#team .card:hover{
+  transform: scale(1.05);
+}
+#team1 .card {
+  border: none;
+  background: #ffffff;
+  padding:40px;
+  transition: 0.5s;
+  background-color:rgb(73,42,69);
+  border-radius: 20px;
+  line-height: 25px;
+ /* box-shadow:0px 10px 10px 0px rgb(112, 112, 112);*/ 
+}
+#team1 #quad .card {
+  border: none;
+  background: #ffffff;
+  padding:40px;
+  transition: 0.5s;
+  background-color:rgb(73,42,69);
+ /* box-shadow:0px 10px 10px 0px rgb(112, 112, 112);*/
+  
+}
+#team1 #quad .card:hover{
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("https://roboprix.github.io/RoboPrix.github.io/scss/../img/bg/Drone.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#team1 #drag .card {
+  border: none;
+  background: #ffffff;
+  padding:40px;
+  transition: 0.5s;
+  background-color:rgb(73,42,69);
+ /* box-shadow:0px 10px 10px 0px rgb(112, 112, 112);*/ 
+}
+#team1 #drag .card:hover{
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://roboprix.github.io/RoboPrix.github.io/scss/../img/bg/drag.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.frontside .card,
+.backside .card {
+    min-height: 20px;
+}
+.frontside .card .card-title{
+  font-family: 'Lobster',cursive;
+}
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #EE445F !important;
+    padding-top:10px;
+}
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+  font-size: 30px; 
+}
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 10px;
+	background: #EE445F;
+	display: inline-block;
+}
+#clockdiv div > span{
+  padding-top: 15px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-bottom:20px;
+	border-radius: 0px;
+	background: rgb(243, 114, 136);
+	display: inline-block;
+}
+.smalltext{
+	padding-top: 15px;
+	font-size: 16px;
+}
+@media(max-width:767px){
+  #clockdiv{
+    font-size:20px;
+    margin-top:10px;
+  }
+  .frontside .card{
+    min-height:0px;
+  }
+}
+.container-fluid.main{
+  position: relative; /* To make the navbar positions relative to this container */
+  padding: 0;
+}
+.carousel .background {
+  background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+}
+@media (max-width:991px) {
+  .carousel .background {
+    background-size: cover; 
+    background-position: left center;
+  }
+}
+.carousel .background.a {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("http://roboprix.vitccroboticsclub.com/img/bg.jpeg");
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition: opacity 0.5s; /* The 0.5s describes the duration to make the opacity from 0 to 1 */
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+/* CSS Hack to trigger GPU for smooth transition */
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.covertext {
+  position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
+  top: 300px; /* The distance between the div with the top of document */
+  left: 0px; /* Make the div full width */
+  right: 0px; /* Make the div full width */
+  width:100%;
+}
+.date{
+  color:#fff;
+  text-align:center;
+  margin:-200px auto;
+  font-family:Lato;
+  border:solid 1px transparent;
+  border-radius: 20px;
+  padding-top:2px;
+  height:25px;
+  width:200px;
+  background: linear-gradient(45deg,rgb(99, 99, 99),#EE445F);
+  transition: 0.2s;
+}
+.date:hover{
+  transform: scale(1.1);
+}
+@media(width:768px){
+  .covertext{
+    top:0px;
+  }
+  .date{
+    margin-top:-300px;
+  }
+}
+.title {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 10px;
+}
+@media(max-width:767px){
+  .covertext{
+    top:300px;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EE445F; 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+svg {
+  position: relative;
+  margin:-175px ;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  background-size: 0.12em 100%;
+  font: 16em/1 Arial;
+  background: transparent;
+}
+.webcoderskull-1 {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 10px;
+  -webkit-animation: stroke-offset 4s ease-in-out;
+  animation: stroke-offset 4s ease-in-out;        
+}
+.webcoderskull-1:nth-child(1) {
+  stroke: #fff;
+  stroke-dashoffset: 7%;
+}
+.webcoderskull-1:nth-child(2) {
+  stroke: #fff;
+  stroke-dashoffset: 14%;
+}
+.webcoderskull-1:nth-child(3) {
+  stroke: #fff;
+  stroke-dashoffset: 21%;
+}
+.webcoderskull-1:nth-child(4) {
+  stroke: #EE445F;
+  stroke-dashoffset: 28%;
+}
+.webcoderskull-1:nth-child(5) {
+  stroke: #EE445F;
+  stroke-dashoffset: 35%;
+}
+@-webkit-keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+    
+  }
+}
+@keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+input[type="radio"]{
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border:1px solid #fff;
+  border-radius:50%;
+  outline:none;
+  box-shadow:0 0 5px 0px rgba(0, 0, 0,0.8) inset;
+}
+input[type='radio']:hover {
+  cursor: pointer;
+  box-shadow:0 0 5px 0px #EE445F inset;
+}
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+input[type='radio']:checked:before {
+  background:#EE445F;
+  outline:none;
+}
+.gallery { 
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.gallery img { 
+  width: 100%; 
+  height: auto;
+  transition: 500ms;
+  margin-bottom: 10px;
+  opacity: 0.6;
+  -webkit-filter: grayscale(0.5);
+  filter:gray;
+  border-radius: 20px;
+  page-break-inside: avoid; /* For Firefox. */
+  -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+  break-inside: avoid; /* For standard browsers like IE. :-) */
+  box-shadow: 0px 5px 5px 0px #000;
+}
+.gallery img:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter:none;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.modal-img,.model-vid{
+margin: 0;
+padding: 0;
+width: 100%;
+min-height: 70%;
+display: table;
+}
+.modal-body{
+padding: 0px;
+}
+.modal-dialog {
+height: 100%;
+    position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+border: none;
+}
+@media screen and (max-width: 767px) {
+.gallery { 
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+  }
+.gallery div { margin: 0; 
+      width: 200px;
+  }
+.modal-dialog {
+      margin: 0 5vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .gallery { 
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+  }
+  .gallery div { 
+      margin: 0; 
+      width: 200px;
+  }
+}
+#team .imageTop{
+  height:200px;
+  width:350px; 
+}
+@media(max-width:767px){
+  #team .imageTop{
+    height:150px;
+    width:250px;
+  }
+}
+.statistics {
+  margin-top: 25px;
+  color: #CCC;
+}
+.statistics .box {
+  background-color: #313348;
+  padding: 15px;
+  overflow: hidden;
+}
+.statistics .box > i {
+  float: left;
+  color: #FFF;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+}
+.statistics .box .info {
+  float: left;
+  width: auto;
+  margin-left: 10px;
+}
+.statistics .box .info h3 {
+  margin: 5px 0 5px;
+  display: inline-block;
+}
+.statistics .box .info p {color:#BBB}
+.statis {
+  color: #EEE;
+  margin-top: 15px;
+  font-family: 'Lobster', cursive;
+}
+.statis .box:hover{
+  transform: scale(1.1);
+}
+.statis .box {
+  position: relative;
+  padding: 50px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  transition:0.2s;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px #000;
+}
+.statis .box h3:after {
+  content: "";
+  height: 2px;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.12);
+  display: block;
+  margin-top: 10px;
+}
+.statis .box i {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  font-size: 30px;
+  padding: 15px;
+  top: -25px;
+  left: -25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  line-height: 60px;
+  text-align: right;
+  border-radius: 50%;
+}
+#box1{
+  background-color: #EE445F;
+}
+#box2{
+  background-color: rgb(120, 199, 3);
+}
+#box3{
+  background-color:rgb(175, 73, 153);
+}
+#box5{
+  background-color:rgb(73, 42, 69);
+}
+.card td{
+  color:#fff;
+  padding:10px;
+}
+.card tr{
+  margin-top:10px;
+}
+.card th{
+  text-align:center;
+  padding-left:1%;
+  padding-right:1%;
+  padding-bottom:10px;padding-top:10px;
+  background-color: #EE445F;
+}
+.card table{
+  margin:auto auto;
+}
+@media(max-width:767px){
+  .card td,.card th{
+    font-size:10px;
+  }
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #EE445F;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);}
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("https://roboprix.github.io/RoboPrix.github.io/scss/../img/bg/Preloader_10.gif") center no-repeat #fff;
+}
+.copyright{
+  color:#fff;
+  font-family: 'Lobster' cursive;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:white;
+	color:#FFF;
+	border-radius:5px;
+	text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.formsubmit{
+	background: #EE445F;
+}
+
+.formsubmit:hover{
+	background: white;
+	color: black;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  */
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  color: black;
+  line-height: normal;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.custombtn {
+  border-color: #EE445F;
+  color: #EE445F
+}
+
+.custombtn:hover {
+  background: #EE445F;
+  color: white;
+}
+
+.datedisplay{
+	background: #EE445F;
+	color: white;
+}
+
+.swal-modal {
+	width: 75%;
+	border: 3px solid white;
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #EE445F;
+  font-size: 15px;
+  border: 1px solid #3e549a;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* faq */
+
+.faq-section {
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+.faq-title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #E91E63;
+    bottom: -25px;
+    margin-left: -30px;
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3B566E;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  float: left;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: #E91E63;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+
+</style> 
+
+<!-- Custom CSS END -->
+</head>
+
+<!-- Body -->
+
+<body>
+
+<!-- Navigation Bar -->
+    <div id="navbaranimated">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <p class="navbar-brand">ROBOPRIX</p>
+                  </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav" style="padding-top:5px;">
+                    <li><a href="index">Home</a><span class="hover"></span></li>
+                    <li><a href="#about">About</a><span class="hover"></span></li>
+                    <li><a href="#events">Events</a><span class="hover"></span></li>
+                    <li><a href="#gallery">Gallery</a><span class="hover"></span></li>
+                    <!-- <li><a href="#faq-section">Faq</a><span class="hover"></span></li> -->
+                    <li><a href="#contact">Contact</a><span class="hover"></span></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!-- Navigation Bar END    -->
+
+<!-- Carousel -->
+    <div class="container-fluid main">
+      
+        <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="6000">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active background a"></div>
+          </div>
+        </div>
+        <div class="covertext">
+          <!-- <div class="col-lg-10" style="float:none; margin:0 auto;"> -->
+                <div style="text-align:center;">
+                  <svg viewBox="0 0 1800 600" >
+                    <symbol id="s-text" >
+                      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">ROBOPRIX</text>
+                    </symbol>
+                  <g class="g-ants">
+                    <use xlink:href="#s-text" class="webcoderskull-1"></use>     
+                    <use xlink:href="#s-text" class="webcoderskull-1"></use>     
+                    <use xlink:href="#s-text" class="webcoderskull-1"></use>     
+                    <use xlink:href="#s-text" class="webcoderskull-1"></use>     
+                    <use xlink:href="#s-text" class="webcoderskull-1"></use>     
+                  </g>
+                  </svg>
+                </div>
+                <div class="date">
+                    <p>21 - 23 May</p>
+                </div>
+          </div>
+        <!-- </div> -->
+      </div>
+<br>
+<!-- Carousel END -->
+
+<!-- Timer -->
+
+<section style="background-color:rgb(40,40,40);color:#fff" id="timer" class="pb-5" >
+  <div id="aboutheader">
+	<div class="container">
+      <div style="text-align: center;margin-top:50px;">
+          <h1 style="font-size:35px;font-family: 'Lobster', cursive;font-weight:normal">Begins In</h1>
+          <hr style="border: 1px solid #EE445F;">
+        </div> 
+	<div class="row">
+	<!-- Event -->
+	<div class="col-xs-36 col-sm-18 col-md-12">
+			<div class="image-flip">
+				<div class="mainflip">
+					<div style="background-color: rgb(40,40,40);" class="frontside">
+						<div style="background: url('img/bg/timerbg.gif'); background-position:center center;background-repeat:no-repeat" class="card">
+							<div class="card-body text-center">
+								
+
+<div id="clockdiv">
+  <div>
+    <span class="days">-498</span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours">-5</span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes">51</span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div id="none">
+      <span class="seconds">15</span>
+      <div class="smalltext">Seconds</div>
+  </div>
+  <br></br>
+  <p style="font-size:15px;"><span style="color:red">*</span> <span style="color:rgb(71, 71, 71);font-weight:bold;">Registrations are open!</span></p>
+</div>
+<script>
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+
+var deadline = new Date(Date.parse(new Date("May 21, 2021 10:00:00")));
+
+initializeClock('clockdiv', deadline);</script>
+
+							</div>
+						</div>
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+  </section>
+<!-- Timmer END -->
+
+<!-- About -->
+<section id="about" style="padding-top:60px">
+  <div id="aboutheader" class="jumbotron">
+    <h1 style="font-size:40px;font-family: 'Lobster', cursive;font-weight:normal" class="display-4">A little about <span style="color:#EE445F">RoboPrix</span></h1>
+    <hr style="border: 1px solid #EE445F;">
+    <p class="lead" style="font-size:16px;">
+    “Every great journey begins with a small step”<br>
+    A small step by us, the Robotics club of VIT Chennai towards a great journey –RoboPrix’19.
+    Our very first, yet successful roboprix'19 , took place on 11th and 12th of February.  
+    It was a concatenation of challenging competitions which aimed at testing the hardware, designing, efficiency, accuracy and functioning of the competing robots. We were honoured to have had enthusiastic participants from various schools and colleges, in and around Chennai. The event witnessed a total of 312 zestful participants, 59teams. The vibrant event started on 11th February at 10pm with a grand inauguration. We were esteemed to have Mr. Ganesh Mani, senior Vice President of Productions at Hyundai Motor India Ltd as Chief guest. Our revered coordinator, Dr Arockia Selvakumar sir welcomed the inquisitive gathering. This marked the beginning of  of our Roboprix's journey. The series of challenging events organized include, Line follower race, Maze runner race, Weight class drag race and Obstacle race.  All the winners were awarded with cash prize and runner-ups were awarded educational books by our guest of honor, Mr. Arthanarieaswaran S., head of Hardware practices of embedded horizontal BU in L&amp;T on the valedictorian function held on 12th February at 3pm.
+    A heart-warming thank you speech by our faculty coordinator marked the end of our beautiful experience of Roboprix’19.
+    </p>
+  </div>
+</section>
+<!-- About END -->
+
+<!-- Events -->
+<section id="events" style="padding-top:60px">
+<div id="aboutheader" class="jumbotron" >
+	<h1 style="font-size:40px;font-family: 'Lobster', cursive;font-weight:normal" class="display-4">Events Happening <span style="color:#EE445F">Now</span></h1>
+	<hr style="border: 1px solid #EE445F;">
+	<!-- Printing events from database -->
+	
+			<div class="row" style="padding:0 30px;">
+			<div class="col-md-6" style="margin-top: 30px">
+				<div class="card" style="position: relative;border-radius:10px">
+					<div style="position:absolute;left: 10;top:-10">
+						<button class="custombtn" style="border-radius:10px;background:#EE445F;color: white">Rs 100</button>
+					</div>
+					<div class="datedisplay"><h3 style="color: white;font-family: Arial, sans-serif;padding:5px 0">Ideathon</h3></div>
+					<!-- Content -->
+					<h5 style="color: black; font-size: 16px;padding: 12px 9px; ">Have you ever wondered how does solving a real-life application-based problem within short time span feel like? Well, that’s the exactly this event is all about. This event focuses on the process of making things together. It is more about the process then it is about the end results. The main drivers for this Make-a-thon are to have fun and learn while creating stuff and to increase your network reach. So, get ready with your creative ideas and register now!</h5>
+
+					<button class="custombtn" style="position:absolute;border-radius:10px;padding:5px 10px;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScXsdvyzXvLnWKOEOsjwuj6mspQ-ClbcH8M91mMgA3kZs-eWg/viewform','_blank')" >Register Now</button>
+				</div>
+        </div>
+
+        <div class="col-md-6" style="margin-top: 30px">
+          <div class="card" style="position: relative;border-radius:10px">
+            <div style="position:absolute;left: 10;top:-10">
+              <button class="custombtn" style="border-radius:10px;background:#EE445F;color: white">Rs 50</button>
+            </div>
+            <div class="datedisplay"><h3 style="color: white;font-family: Arial, sans-serif;padding:5px 0">Quiz</h3></div>
+            <!-- Content -->
+            <h5 style="color: black; font-size: 16px;padding: 12px 9px; ">For building any working prototype, one must require some knowledge about the working of some basic components. This is a brilliant opportunity to test your understanding of some basic hardware related concepts. Sensor, actuators and bot related concepts are very much required for an engineer in any electronics domain. So why not hop in for a fun afternoon session and participate in an interactive quiz.</h5>
+  
+            <button class="custombtn" style="position:absolute;border-radius:10px;padding:5px 10px;" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSc9Z3f5cXx1WE3yJKc6x93o-2A9SrfpRFT5IikL7uZL-u783Q/viewform','_blank')">Register Now</button>
+          </div>
+        </div>
+
+  </div>
+</section>
+<!-- Events END -->
+
+<!-- Gallery -->
+<section id="gallery" style="padding-top:60px">
+  <div style="text-align: center;" class="jumbotron" id="aboutheader">
+  <h1 style="font-size:40px;font-family: 'Lobster', cursive;font-weight:normal" class="display-4"><span style="color:#EE445F">Gallery</span></h1>
+      <hr style="border: 1px solid #EE445F;">
+      <div class="container">
+        <div class="gallery">
+          <img src="img/bg/IMG_7302.JPG" alt="" width="100%" height="auto" class="gallery-img">
+          <img src="img/bg/IMG_7756.JPG" alt="" width="100%" height="auto" class="gallery-img">		
+          <img src="img/bg/IMG_0123.JPG" alt="" width="100%" height="auto" class="gallery-img">
+          <img src="img/bg/IMG_7217.JPG" alt="" width="100%" height="auto" class="gallery-img">
+          <img src="img/bg/IMG_0442.JPG" alt="" width="100%" height="auto" class="gallery-img">
+          <img src="img/bg/IMG_7412.JPG" alt="" width="100%" height="auto" class="gallery-img">
+          <img src="img/bg/IMG_0699.JPG" alt="" width="100%" height="auto" class="gallery-img">
+          <img src="img/bg/IMG_7539.JPG" alt="" width="100%" height="auto" class="gallery-img">
+          <img src="img/bg/IMG_0493.JPG" alt="" width="100%" height="auto" class="gallery-img">
+        </div> 
+      </div>
+      <br></br>
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+          </div>
+        </div>
+      </div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+		<script>
+				$(document).ready(function () {
+          $(".gallery-img").click(function(){
+            var t = $(this).attr("src");
+            $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+            $("#myModal").modal();
+          });
+        });
+    </script>
+  </div>
+  </section>
+<!-- Gallery END -->
+
+<!-- Faq -->
+
+<!-- <section class="faq-section" id="faq-section">
+  <div id="aboutheader">
+  <div class="container">
+    <div class="row">
+                      <div style="text-align: center;"  >
+                      <h1 style="font-size:40px;font-family: 'Lobster', cursive;font-weight:normal" class="display-4"><span style="color:#EE445F">FAQ</span></h1>
+                      <hr style="border: 1px solid #EE445F;">
+                      </div>
+                      <div class="col-md-12 ">
+                          <div class="faq" id="accordion">
+                              <div class="card">
+                                  <div class="card-header" id="faqHeading-1">
+                                      <div class="mb-0">
+                                          <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                              <span class="badge">1</span>What is Lorem Ipsum?
+                                          </h5>
+                                      </div>
+                                  </div>
+                                  <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                      <div class="card-body">
+                                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-header" id="faqHeading-2">
+                                      <div class="mb-0">
+                                          <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                                              <span class="badge">2</span> Where does it come from?
+                                          </h5>
+                                      </div>
+                                  </div>
+                                  <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                                      <div class="card-body">
+                                          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-header" id="faqHeading-3">
+                                      <div class="mb-0">
+                                          <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                              <span class="badge">3</span>Why do we use it?
+                                          </h5>
+                                      </div>
+                                  </div>
+                                  <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                                      <div class="card-body">
+                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-header" id="faqHeading-4">
+                                      <div class="mb-0">
+                                          <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                                              <span class="badge">4</span> Where can I get some?
+                                          </h5>
+                                      </div>
+                                  </div>
+                                  <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                                      <div class="card-body">
+                                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-header" id="faqHeading-5">
+                                      <div class="mb-0">
+                                          <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                                              <span class="badge">5</span> What is Lorem Ipsum?
+                                          </h5>
+                                      </div>
+                                  </div>
+                                  <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                                      <div class="card-body">
+                                          <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-header" id="faqHeading-6">
+                                      <div class="mb-0">
+                                          <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                                              <span class="badge">6</span> Where does it come from?
+                                          </h5>
+                                      </div>
+                                  </div>
+                                  <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                                      <div class="card-body">
+                                          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-header" id="faqHeading-7">
+                                      <div class="mb-0">
+                                          <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                                              <span class="badge">7</span> Why do we use it?
+                                          </h5>
+                                      </div>
+                                  </div>
+                                  <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                                      <div class="card-body">
+                                          <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </section> -->
+
+  <!-- Faq END -->
+
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    
+    .contact_cards{
+      margin-top:60px;
+      margin-bottom:50px;
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /*- - - - - - C O N T A C T - C A R D S - - - - - */
+    
+    .card__{
+      /* width: 200px;  */
+      /* ⬅ Size - Small (width: 200px), Medium (width: 225px), Large (width: 250px) */
+      overflow: hidden;
+      background-color: #FFFFFF;
+       
+      border-radius: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      text-align: center;
+      -webkit-transition: .1s ease-in-out;
+      transition: .1s ease-in-out;
+    }
+    
+      .card__{
+        padding-right:20px;
+        padding-left:20px;
+        margin-right: 20px;
+      }
+    
+      .card__:hover{
+        margin-top: -10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+    
+    h3, a, i{
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+      -webkit-transition: .1s ease-in-out;
+      transition: .1s ease-in-out;
+    }
+    
+      h3{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #212121;
+      }
+    
+      a{
+        display: block;
+        padding: 5px 0px;
+        font-size: 14px;
+        color: #EE445F;;
+        text-decoration: none;
+      }
+    
+        a:hover{
+          background-color:black;
+          color: inherit;
+        }
+    
+    
+    </style>
+    <!-- Contact cards -->
+    <section id="contact">
+      <div style="padding:0 10%;">
+      <div style="text-align: center;"  >
+        <h1 style="font-size:40px;font-family: 'Lobster', cursive;font-weight:normal" class="display-4"><span style="color:#EE445F">Contact Us</span></h1>
+        <hr style="border: 1px solid #EE445F;">
+        </div>
+    <div class="contact_cards">
+    <div class="card__">
+       <!-- <div class="banner">
+          <div class="avatar"></div>
+       </div> -->
+      <h3>Jeevan Varma</h3>
+       <h5>Student Coordinator</h5>
+       <a href="tel:+919848849911"> +91 9848849911 </a>
+    </div>
+    
+    <div class="card__">
+       <!-- <div class="banner">
+          <div class="avatar"></div>
+       </div> -->
+      <h3>Gaurav PV</h3>
+       <h5>Student Coordinator</h5>
+       <a href="tel:+917989832709"> +91 7989832709 </a>
+    </div>
+    
+    <div class="card__">
+       <!-- <div class="banner">
+          <div class="avatar"></div>
+       </div> -->
+      <h3>Harsha Vardhan</h3>
+       <h5>Student Coordinator</h5>
+       <a href="tel:+919003928248"> +91 9003928248 </a>
+    </div>
+    </div>
+    
+    <div class="contact_cards" style="margin-top:30px;">
+    <div class="card__">
+       <!-- <div class="banner">
+          <div class="avatar"></div>
+       </div> -->
+      <h3>Dr. Arockia Selvakumar A</h3>
+       <h5> Faculty Coordinator</h5>
+       <a href="tel:+9199626 81933"> +91 9962681933 </a>
+    </div>
+    </div>
+    </div>
+    </section>
+    
+    <!-- Contact Cards END -->
+
+<!-- Discord -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://discord.gg/MjSRZC3Z" class="float" target="_blank">
+<img src="https://discord.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg">
+</a>
+<!-- Discord END -->
+
+
+<!-- Footer -->
+  <section style="background-color: #EE445F;padding:40px 0;" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <span style="font-family:'Lobster' cursive" class="copyright">Copyright ©  RoboPrix’21 </span>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+<!-- Footer END -->
+
+
+</body></html>
