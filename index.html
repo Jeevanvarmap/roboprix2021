@@ -147,6 +147,12 @@ body{
   opacity:0;
 }
 @media (max-width: 767px) {
+
+#none{
+  display:none;
+
+}
+
   .jumbotron{
     padding-bottom:0;
   }
@@ -947,6 +953,7 @@ border: none;
   }
 }
 
+
 </style> 
 
 <!-- Custom CSS END -->
@@ -975,7 +982,7 @@ border: none;
                     <li><a href="#about">About</a><span class="hover"></span></li>
                     <li><a href="#events">Events</a><span class="hover"></span></li>
                     <li><a href="#gallery">Gallery</a><span class="hover"></span></li>
-                    <!-- <li><a href="#faq-section">Faq</a><span class="hover"></span></li> -->
+                    <li><a href="#faq-section">Faq</a><span class="hover"></span></li>
                     <li><a href="#contact">Contact</a><span class="hover"></span></li>
                   </ul>
                 </div>
@@ -1049,10 +1056,10 @@ border: none;
     <span class="minutes">51</span>
     <div class="smalltext">Minutes</div>
   </div>
-  <div id="none">
+  <!-- <div id="none">
       <span class="seconds">15</span>
       <div class="smalltext">Seconds</div>
-  </div>
+  </div> -->
   <br></br>
   <p style="font-size:15px;"><span style="color:red">*</span> <span style="color:rgb(71, 71, 71);font-weight:bold;">Registrations are open!</span></p>
 </div>
@@ -1211,9 +1218,9 @@ initializeClock('clockdiv', deadline);</script>
 
 <!-- Faq -->
 
-<!-- <section class="faq-section" id="faq-section">
+<section class="faq-section" id="faq-section">
   <div id="aboutheader">
-  <div class="container">
+  <!-- <div class="container"> -->
     <div class="row">
                       <div style="text-align: center;"  >
                       <h1 style="font-size:40px;font-family: 'Lobster', cursive;font-weight:normal" class="display-4"><span style="color:#EE445F">FAQ</span></h1>
@@ -1225,13 +1232,14 @@ initializeClock('clockdiv', deadline);</script>
                                   <div class="card-header" id="faqHeading-1">
                                       <div class="mb-0">
                                           <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
-                                              <span class="badge">1</span>What is Lorem Ipsum?
+                                              <span class="badge">1</span>Are there any prerequisites or skills required to participate in this event?
                                           </h5>
                                       </div>
                                   </div>
                                   <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
                                       <div class="card-body">
-                                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                          <p>Everyone is welcome. While experience in hardware domain and fundamental in robotics is a huge plus, teams will also need people with strong presentation skills and brilliant ideas.
+                                          </p>
                                       </div>
                                   </div>
                               </div>
@@ -1239,13 +1247,14 @@ initializeClock('clockdiv', deadline);</script>
                                   <div class="card-header" id="faqHeading-2">
                                       <div class="mb-0">
                                           <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-                                              <span class="badge">2</span> Where does it come from?
+                                              <span class="badge">2</span> How long is this event?
                                           </h5>
                                       </div>
                                   </div>
                                   <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
                                       <div class="card-body">
-                                          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                          <p>RoboPrix 21 is a three days event – 19th MAY 2021 to 21st MAY 2021.
+                                          </p>
                                       </div>
                                   </div>
                               </div>
@@ -1253,13 +1262,15 @@ initializeClock('clockdiv', deadline);</script>
                                   <div class="card-header" id="faqHeading-3">
                                       <div class="mb-0">
                                           <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-                                              <span class="badge">3</span>Why do we use it?
+                                              <span class="badge">3</span>Do I need a team?
+
                                           </h5>
                                       </div>
                                   </div>
                                   <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
                                       <div class="card-body">
-                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.</p>
+                                          <p>For the Ideathon, only team participation is allowed (max 3 members). Whereas the Robotics quiz event is an individual-only event.
+                                          </p>
                                       </div>
                                   </div>
                               </div>
@@ -1267,13 +1278,16 @@ initializeClock('clockdiv', deadline);</script>
                                   <div class="card-header" id="faqHeading-4">
                                       <div class="mb-0">
                                           <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
-                                              <span class="badge">4</span> Where can I get some?
+                                              <span class="badge">4</span> How much does it cost?
+
                                           </h5>
                                       </div>
                                   </div>
                                   <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
                                       <div class="card-body">
-                                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                          <p>Robotics quiz - ₹50
+                                            Ideathon - ₹100 (per team)
+                                            </p>
                                       </div>
                                   </div>
                               </div>
@@ -1281,13 +1295,14 @@ initializeClock('clockdiv', deadline);</script>
                                   <div class="card-header" id="faqHeading-5">
                                       <div class="mb-0">
                                           <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-                                              <span class="badge">5</span> What is Lorem Ipsum?
+                                              <span class="badge">5</span> Is this an onsite event?
                                           </h5>
                                       </div>
                                   </div>
                                   <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
                                       <div class="card-body">
-                                          <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+                                          <p> No, keeping present situation in mind because of COVID-19, this is strictly an online event.
+                                          </p>
                                       </div>
                                   </div>
                               </div>
@@ -1295,13 +1310,14 @@ initializeClock('clockdiv', deadline);</script>
                                   <div class="card-header" id="faqHeading-6">
                                       <div class="mb-0">
                                           <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
-                                              <span class="badge">6</span> Where does it come from?
+                                              <span class="badge">6</span> Is this event only for VIT students?
                                           </h5>
                                       </div>
                                   </div>
                                   <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
                                       <div class="card-body">
-                                          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                          <p>No, this event is open for students coming for different colleges and schools too.
+                                          </p>
                                       </div>
                                   </div>
                               </div>
@@ -1309,22 +1325,133 @@ initializeClock('clockdiv', deadline);</script>
                                   <div class="card-header" id="faqHeading-7">
                                       <div class="mb-0">
                                           <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
-                                              <span class="badge">7</span> Why do we use it?
+                                              <span class="badge">7</span> How can I Register?
                                           </h5>
                                       </div>
                                   </div>
                                   <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
                                       <div class="card-body">
-                                          <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                          <p>You can register through our official “RoboPrix” website, where you will be redirected to a link (google form). You are supposed to fill the required details and finally proceed with the payment. 
+                                          </p>
                                       </div>
                                   </div>
                               </div>
+                              <div class="card">
+                                <div class="card-header" id="faqHeading-8">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8" data-aria-expanded="false" data-aria-controls="faqCollapse-8">
+                                            <span class="badge">8</span> Who can participate?
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Any budding engineer with passion for hardware-oriented learning can participate in this event.
+ 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="faqHeading-9">
+                                  <div class="mb-0">
+                                      <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-9" data-aria-expanded="false" data-aria-controls="faqCollapse-9">
+                                          <span class="badge">9</span> Do I have to stay the whole time?
+                                      </h5>
+                                  </div>
+                              </div>
+                              <div id="faqCollapse-9" class="collapse" aria-labelledby="faqHeading-9" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <p>No, you only need to be present when you’re registered event starts. But we planned for an interactive session at the end, if it interests you in any way contestants are always welcome.
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="faqHeading-10">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-10" data-aria-expanded="false" data-aria-controls="faqCollapse-10">
+                                        <span class="badge">10</span> What will be the basis of judgement?
+
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-10" class="collapse" aria-labelledby="faqHeading-10" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The following will be taken into account: 
+                                      The marks allotted to you by the mentors during the reviews. 
+                                      The marks allotted by the judge panel during the final presentation.
+                                       
+                                      For the quiz, participant with the highest score at the end is chosen as the winner.
+                                      
+                                      The decision of the organising committee would be final and abiding.
+                                      
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="faqHeading-11">
+                              <div class="mb-0">
+                                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-11" data-aria-expanded="false" data-aria-controls="faqCollapse-11">
+                                      <span class="badge">11</span> Can students from different colleges form a team?
+                                  </h5>
+                              </div>
+                          </div>
+                          <div id="faqCollapse-11" class="collapse" aria-labelledby="faqHeading-11" data-parent="#accordion">
+                              <div class="card-body">
+                                  <p>Yes, students from different colleges can be part of the same team
+
+
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="faqHeading-12">
+                            <div class="mb-0">
+                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-12" data-aria-expanded="false" data-aria-controls="faqCollapse-12">
+                                    <span class="badge">12</span> This is the first time I’m participating in a Ideathon. Are there any pre-requisites?
+
+                                </h5>
+                            </div>
+                        </div>
+                        <div id="faqCollapse-12" class="collapse" aria-labelledby="faqHeading-12" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>There are no prerequisites. Just some curiosity and zeal to learn would suffice. We would love to host your first Ideathon!
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="faqHeading-13">
+                          <div class="mb-0">
+                              <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-13" data-aria-expanded="false" data-aria-controls="faqCollapse-13">
+                                  <span class="badge">13</span> What is the Code of Conduct of RoboPrix 21?
+                              </h5>
+                          </div>
+                      </div>
+                      <div id="faqCollapse-13" class="collapse" aria-labelledby="faqHeading-13" data-parent="#accordion">
+                          <div class="card-body">
+                              <p>We request all the participants to maintain integrity and professional competence at all times.
+                                All participants are requested to show mutual respect.
+                                For the smooth conductance of all the events, we request everyone to show their professional behaviour at any cost.
+                                Malpractices like plagiarism of ideas are strictly discouraged. Involvement in such activities might result in withdrawal of your registration.
+                                
+
+                              </p>
+                          </div>
+                      </div>
+                  </div>
                           </div>
                       </div>
                     </div>
                   </div>
-                  </div>
-                  </section> -->
+                  <!-- </div> -->
+                  </section>
 
   <!-- Faq END -->
 
